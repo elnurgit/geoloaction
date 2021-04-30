@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:hint="Text1"
+        android:layout_margin="10dp"
+        android:id="@+id/edt1"
+        android:textSize="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+
+        android:id="@+id/bt1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toRightOf="@+id/edt1"
+        android:backgroundTint="#888787"
+        android:text="1" />
+
+    <EditText
+        android:id="@+id/edt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="41dp"
+        android:layout_marginEnd="20dp"
+        android:layout_toRightOf="@+id/bt1"
+        android:hint="Text1"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/Res1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="20dp"
+        android:hint="Result:"
+        android:textColor="#F4F4F4"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/edt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Res1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="0dp"
+        android:hint="Text1"
+        android:textSize="15sp" />
+
+    <Button
+
+        android:id="@+id/bt2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/Res1"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="41dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toRightOf="@+id/edt3"
+        android:backgroundTint="#888787"
+        android:text="2" />
+
+    <EditText
+        android:hint="Text2"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/edt4"
+        android:layout_marginTop="0dp"
+        android:layout_toRightOf="@+id/bt2"
+        android:layout_below="@+id/Res1"
+        android:textSize="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/Sum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt3"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:hint="Sum:"
+        android:textColor="#F4F4F4"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/gpsBt"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/Sum"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="56dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#888787"
+        android:text="3"
+        app:iconTint="#FFFFFF" />
+
+    <TextView
+
+        android:id="@+id/gps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Sum"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toEndOf="@+id/gpsBt"
+        android:hint="Gps"
+        android:textColor="#EAEAEA"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/dtBt"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/Sum"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#888787"
+        android:text="4" />
+
+    <TextView
+        android:id="@+id/dat"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gps"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="143dp"
+        android:layout_marginBottom="20dp"
+        android:hint="DateTime"
+        android:textColor="#F4F4F4"
+        android:textSize="15sp" />
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/dat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>
